@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let correct_button = document.querySelectorAll(".correct");
+                let incorrect_button = document.querySelectorAll(".incorrect");
+
+                for(let i = 0; i < correct_button.length; i++)
+                {
+                    correct_button(i).addEventListener("click", function(){
+                        correct_button.style.backgroundColor = "transparent";
+                    });
+                }
+                for(let i = 0; i < incorrect_button.length; i++)
+                {
+                    incorrect_button(i).addEventListener("click", function(){
+                        incorrect_button.style.backgroundColor = "red";
+                    });
+                }
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>Q1. International literacy day is observed on</h3>
+                <h4>
+                    <button class="correct">A. Sep 8</button>
+                    <button class="incorrect">B. Nov 28</button>
+                    <button class="incorrect">C. May 2</button>
+                    <button class="incorrect">D. Sep 22</button>
+                </h4>
+                <h3>Q1. Which of the following animal does not have external ears ?</h3>
+                <h4>
+                    <button class="incorrect">A. Cat</button>
+                    <button class="correct">B. Snake</button>
+                    <button class="incorrect">C. Rat</button>
+                    <button class="incorrect">D. Bat</button>
+                </h4>
+                <h3>Q1. World AIDs day is on</h3>
+                <h4>
+                    <button class="incorrect">A. Sep 1</button>
+                    <button class="incorrect">B. Nov 28</button>
+                    <button class="correct">C. Dec 1</button>
+                    <button class="incorrect">D. Sep 22</button>
+                </h4>
+
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>
